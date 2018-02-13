@@ -55,7 +55,7 @@ export default function page (...args) {
 }
 
 export function trackRoute (route) {
-  if (isRouteIgnored(route)) {
+  if (isRouteIgnored(route.name)) {
     return
   }
   
